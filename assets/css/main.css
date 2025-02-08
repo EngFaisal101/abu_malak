@@ -1159,7 +1159,7 @@ section {
   object-fit: cover; /* للحفاظ على نسبة العرض إلى الارتفاع */
 }
 .hero .icon-box:hover {
-  background: #4A4A4A;
+  background: rgb(239, 250, 249);
   border: 1px solid #fff; /* تحديد اللون المحيط بالصورة */
 }
 
