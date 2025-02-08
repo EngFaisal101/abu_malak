@@ -86,7 +86,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--color-primary);
+  background:#ff6f61;
   left: 0;
   right: 0;
   bottom: 0;
@@ -1118,7 +1118,7 @@ section {
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
-  background:#FADA7A;
+  background:#f88c82;
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in-out;
   border-radius:25px 0 0 25px;
@@ -1135,7 +1135,7 @@ section {
 }
 
 .hero .icon-box .title a {
-  color: #000;
+  color: #fff;
   transition: 0.3s;
 }
 
