@@ -132,58 +132,61 @@
 }
 
 
-/* start activity swiper*/
-/* activity */
-.review {
-	width: 100%;
-	background-color: #fefcfc;
-  }
-  .review .main {
-	max-width: 1200px;
-	padding: 40px 20px;
-	z-index: 9;
-	text-align: center;
-	margin: auto;
-	cursor: pointer;
-  }
-  
-  .review .card {
+.review .card {
 	background-color: lightseagreen;
 	color:black;
 	padding: 3em 0;
 	border: 0;
 	border-radius: 4em 0;
-	background: linear-gradient(to left, #FADA7A 50%, rgb(239, 250, 249) 50%);
+	background: linear-gradient(to left, #ffb7b1 50%, rgb(239, 250, 249) 50%);
 	background-size: 200%;
 	background-position: right;
 	transition: all .5s;
 	box-shadow: 0 10px 30px rgba(252, 248, 248, 0.8); /* زيادة العمق والتوهج */
-	max-height:fit-content;
+  height:300px; /* تحديد ارتفاع ثابت */
+  width: 250px; /* تحديد عرض ثابت */
+  overflow: hidden; /* لمنع الصورة من الخروج خارج الإطار */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   }
   
   .review .card:hover{
   background-position:left;
   }
-  
-  .review .card .card-title{
-  font-size:1.2rem;
-  }
-  
-  .review .card .card-text{
-  font-size:1rem;
-  }
-  .swiper-button-prev:after,.swiper-button-next:after{
+.review .card img {
+  width: 120px; /* تحديد عرض ثابت للصورة */
+  height: 120px; /* تحديد ارتفاع ثابت للصورة */
+  object-fit: cover; /* لضبط الصورة بما يتناسب مع الإطار */
+  border-radius: 50%; /* لجعل الصورة دائرية */
+}
+
+.review .card .card-title {
+  font-size: 1.2rem;
+  margin-top: 1em; /* إضافة مسافة بين الصورة والعنوان */
+}
+
+.review .card .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
   color: white;
-  background-color:#a6bbf5;
-  border-radius:50%;
+  background-color: #a6bbf5;
+  border-radius: 50%;
   width: 40px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 0 0 auto;
-  font-size:2rem;
-  }
+  font-size: 2rem;
+}
+
 /* end activity swiper*/
 .custom-img {
   border: 5px solid white; /* إضافة إطار أبيض حول الصورة */
@@ -231,6 +234,19 @@
       font-size: 1.5rem;
       font-weight: bold;
     }
+
+    .hero-carousel-img {
+  width: 100%; /* ضمان ملء الصورة للعرض الكامل للعنصر */
+  height: 400px; /* تحديد ارتفاع ثابت لجميع الصور */
+  object-fit: cover; /* ضبط الصورة لتغطية المساحة بشكل مناسب */
+}
+#about .content p {
+  font-size: 1.2rem; /* حجم أكبر للنص */
+  line-height: 1.8;
+  color: #666;
+  text-align: justify;
+}
+
 </style>
 </head>
 
@@ -280,11 +296,11 @@
   <div class="container position-relative">
     <div class="row gy-5" data-aos="fade-in">
       <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-end">
-        <p class="text-warning font-italic" style="font-size:1.5rem;"">أسعار تنافسية واتقان في الأعمال</p>
+        <p class="font-italic" style="font-size:1.5rem;color:#ff6f61;">أسعار تنافسية واتقان في الأعمال</p>
         <h2>أبو ملاك &nbsp;<span>لجميع انواع الدهانات والديكورات</span></h2>
         <p class="carousel-text" id="typing-effect1" style="font-size:1.5rem;"></p>
         <div class="d-flex justify-content-center justify-content-lg-start">
-          <a href="https://wa.me/966509860646" class="btn-get-started">+966509860646</a>
+          <a href="https://wa.me/966509860646" class="btn-get-started" style="background-color:#ff6f61;">+966509860646</a>
         </div>
       </div>
 
@@ -323,10 +339,9 @@
 
   <main id="main">
 
-   <!-- ======= About Us Section ======= -->
+  <!-- ======= About Us Section ======= -->
 <section id="about" class="about">
   <div class="container" data-aos="fade-up">
-
     <div class="section-header">
       <h2>من نحن؟</h2>
     </div>
@@ -345,13 +360,11 @@
           
             نحن متخصصون أيضًا في تصميم وتنفيذ الأسقف الجبسية والحوائط المعمارية التي تعكس الذوق الرفيع، بالإضافة إلى توفير خدمات تسوية الأسطح والعزل لضمان أقصى درجات الحماية. كما نقدم خدمات بناء الملاحق والبرجولات بأعلى معايير الجودة، مما يتيح لك إضافة مساحات جديدة أو تحسين التصميم الخارجي للمكان.
           
-            بفضل سنوات من الخبرة والاحترافية، نعمل جاهدين على تحقيق أفضل النتائج التي تلبي تطلعات عملائنا. نحن نولي اهتمامًا خاصًا لكل تفصيلة صغيرة في العمل لضمان رضا العميل التام. في "أبو ملاك"، لا نهتم فقط بالجودة العالية، بل نحرص أيضًا على الالتزام بالوقت المحدد والميزانية المتاحة، مما يجعلنا الخيار المثالي لمن يبحث عن حلول متكاملة وأعمال متميزة في عالم الدهانات والديكورات. هدفنا هو تحويل أفكارك إلى واقع ينبض بالجمال والابتكار، مع لمسات فنية تميز كل مشروع عن غيره.
           </p>
           
         </div>
       </div>
     </div>
-
   </div>
 </section>
 <!-- End About Us Section -->
@@ -454,10 +467,7 @@
                 </div>
               </div><!-- End Info Item -->
 
-              <div class="info-item d-flex">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-              </div><!-- End Info Item -->
-
+              
               <div class="info-item d-flex">
                 <i class="bi bi-phone flex-shrink-0"></i>
                 <div>
@@ -485,7 +495,6 @@
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="surname" name="surname" class="form-control" id="surname" placeholder="اللقب" autocomplete="on" required>
-
                 </div>
               </div>
               <div class="form-group mt-3">
@@ -813,7 +822,7 @@ async function loadServices_b() {
             <img src="${item.image || 'img/five.jpg'}" alt="ابو ملاك للدهانات وجميع انواع الديكورات" width="150px" height="150px" class="img-fluid rounded-circle custom-img">
             <div class="card-body">
               <h3 class="card-title py-2">
-                <a href="service-details.html?title=${encodeURIComponent(item.title)}&description=${encodeURIComponent(item.description)}&image=${encodeURIComponent(item.image)}" class="btn btn-dark text-white p-2">
+                <a href="service-details.html?title=${encodeURIComponent(item.title)}&description=${encodeURIComponent(item.description)}&image=${encodeURIComponent(item.image)}" class="btn btn-primary btn-lg text-white p-2">
                   ${item.title || 'اسم الخدمة غير موجود'}
                 </a>
               </h3>
